@@ -22,6 +22,8 @@ services:
    ports:
    - "3306:3306"
    restart: always
+   volumes:
+   - mysql_volume:/var/lib/mysql
   
   app:
     restart: always
@@ -35,3 +37,6 @@ services:
     command: mvn clean spring-boot:run
     depends_on:
       - hk-mysql
+
+  volumes:
+    mysql_volume:
