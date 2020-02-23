@@ -1,4 +1,4 @@
-version: '3'
+version: '4'
 services:
   hk-nginx:
    container_name: hk-nginx
@@ -21,6 +21,9 @@ services:
     MYSQL_ROOT_HOST: '%'
    ports:
    - "3306:3306"
+   volumes:
+   - /docker/mysql/data:/var/lib/mysql
+   - /docker/mysql/config:/etc/mysql/conf.d
    restart: always
   
   app:
