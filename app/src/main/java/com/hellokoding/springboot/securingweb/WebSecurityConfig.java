@@ -17,7 +17,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 	protected void configure(HttpSecurity http) throws Exception {
 		http
 			.authorizeRequests()
-				.antMatchers("/", "/home").permitAll()
+				.antMatchers("/", "/home", "/create").permitAll()
 				.anyRequest().authenticated()
 				.and()
 			.formLogin()
@@ -28,6 +28,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 				.permitAll();
 	}
 
+	/*
 	@Bean
 	@Override
 	public UserDetailsService userDetailsService() {
@@ -40,4 +41,5 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
 		return new InMemoryUserDetailsManager(user);
 	}
+	*/
 }
