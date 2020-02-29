@@ -33,6 +33,7 @@ public class WebSecurityConfiguration extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
 
+        //.antMatchers("/admin/**").hasAuthority("ADMIN")
         String loginPage = "/login";
         String logoutPage = "/logout";
 
@@ -41,7 +42,8 @@ public class WebSecurityConfiguration extends WebSecurityConfigurerAdapter {
                 .antMatchers("/").permitAll()
                 .antMatchers(loginPage).permitAll()
                 .antMatchers("/registration").permitAll()
-                .antMatchers("/admin/**").hasAuthority("ADMIN")
+                .antMatchers("/main").permitAll()
+                .antMatchers("/mypage").permitAll()
                 .anyRequest()
                 .authenticated()
                 .and().csrf().disable()

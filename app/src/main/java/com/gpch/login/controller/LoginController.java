@@ -2,6 +2,9 @@ package com.gpch.login.controller;
 
 import com.gpch.login.model.User;
 import com.gpch.login.service.UserService;
+
+import jline.internal.Log;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
@@ -68,5 +71,20 @@ public class LoginController {
         return modelAndView;
     }
 
+	 @GetMapping(value={"/mypage"})
+	    public ModelAndView mypage(){
+		 	Log.debug("mypage 진입");
+	        ModelAndView modelAndView = new ModelAndView();
+	        modelAndView.setViewName("mypage");
+	        return modelAndView;
+	    }
 
+
+		@GetMapping(value = { "/main" })
+		public ModelAndView main() {
+			Log.debug("adminMain 진입");
+			ModelAndView modelAndView = new ModelAndView();
+			modelAndView.setViewName("main");
+			return modelAndView;
+		}
 }

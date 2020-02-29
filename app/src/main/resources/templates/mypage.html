@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>mypage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+<form th:action="@{/registration}" method="get">
+    <button class="btn btn-md btn-warning btn-block" type="Submit">Go To Registration Page</button>
+</form>
+
+<div class="container">
+
+		<table class="table table-striped">
+			<tr>
+				<th scope="col">고객번호</th>
+				<th>01-0001</th>
+				<th scope="col">이름</th>
+				<th>홍길동</th>
+				<th rowspan="5">
+					<img src="https://t1.daumcdn.net/news/201712/28/akn/20171228104215336fydf.jpg" class="img-circle" alt="Cinque Terre" width="105" height="140">
+				</th>
+			</tr>
+			<tr>
+				<td scope="col">가입년월</td>
+				<td>20.01.01</td>
+				<td scope="col">연락처</td>
+				<td>010-6428-5232</td>
+			</tr>
+			<tr>
+				<td class="tg-0lax">이메일</td>
+				<td class="tg-0lax">phades@naver.com</td>
+				<td class="tg-0lax">담당자</td>
+				<td class="tg-0lax">원장</td>
+			</tr>
+			<tr>
+				<td class="tg-0lax">최근방문일</td>
+				<td class="tg-0lax">20.01.01</td>
+				<td class="tg-0lax">최근 시술내역</td>
+				<td class="tg-0lax">커트-여자</td>
+			</tr>
+			<tr>
+				<td class="tg-0lax">메모</td>
+				<td class="tg-0lax" colspan="3">메모 없음</td>
+			</tr>
+		</table>
+
+
+	
+    <div class="row">
+        <div class="col-md-6">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Username</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Larry</td>
+                <td>the Bird</td>
+                <td>@twitter</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col-md-6">
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Username</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Larry</td>
+                <td>the Bird</td>
+                <td>@twitter</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    
+    
+    <img th:src="@{/images/login.jpg}" class="img-responsive center-block" width="300" height="300" alt="Logo"/>
+    <form th:action="@{/login}" method="POST" class="form-signin">
+        <h3 class="form-signin-heading" th:text="Welcome"></h3>
+        <br/>
+
+        <input type="text" id="user_name" name="user_name" placeholder="User Name"
+               class="form-control"/> <br/>
+        <input type="password" th:placeholder="Password"
+               id="password" name="password" class="form-control"/> <br/>
+
+        <div align="center" th:if="${param.error}">
+            <p style="font-size: 20; color: #FF1C19;">User Name or Password invalid, please verify</p>
+        </div>
+        <button class="btn btn-lg btn-primary btn-block" name="Submit" value="Login" type="Submit"
+                th:text="Login"></button>
+    </form>
+</div>
+</body>
+</html>

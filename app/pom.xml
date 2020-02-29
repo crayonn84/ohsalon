@@ -86,12 +86,28 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+				<dependencies>
+					<dependency>
+                        <groupId>org.springframework</groupId>
+                        <artifactId>springloaded</artifactId>
+                        <version>1.2.1.RELEASE</version>
+                    </dependency>
+				</dependencies>
+				<configuration>
+                    <jvmArguments>
+                        -Xdebug -Xrunjdwp:server=y,transport=dt_socket,address=8000,suspend=n
+                    </jvmArguments>
+                </configuration>
             </plugin>
+            
             <plugin>
                 <groupId>org.codehaus.gmavenplus</groupId>
                 <artifactId>gmavenplus-plugin</artifactId>
                 <version>1.5</version>
             </plugin>
+            
+            
+            
         </plugins>
     </build>
 
