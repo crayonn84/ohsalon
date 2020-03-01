@@ -1,0 +1,390 @@
+2020-03-01 16:13:39.719  INFO 8756 --- [main] com.gpch.login.LoginApplication          : Starting LoginApplication on DESKTOP-0RHTEEE with PID 8756 (F:\workspace\ohsalon\app\target\classes started by yoojin in F:\workspace\ohsalon\app)
+2020-03-01 16:13:39.720  INFO 8756 --- [main] com.gpch.login.LoginApplication          : No active profile set, falling back to default profiles: default
+2020-03-01 16:13:40.307  INFO 8756 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-03-01 16:13:40.355  INFO 8756 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 43ms. Found 2 JPA repository interfaces.
+2020-03-01 16:13:40.572  INFO 8756 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-01 16:13:40.743  INFO 8756 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-03-01 16:13:40.750  INFO 8756 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-01 16:13:40.750  INFO 8756 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-03-01 16:13:40.934  INFO 8756 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-01 16:13:40.934  INFO 8756 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1032 ms
+2020-03-01 16:13:41.042  INFO 8756 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-03-01 16:13:41.084  INFO 8756 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.9.Final}
+2020-03-01 16:13:41.161  INFO 8756 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-03-01 16:13:41.221  INFO 8756 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-03-01 16:13:41.358  INFO 8756 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-03-01 16:13:41.367  INFO 8756 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-03-01 16:13:41.865  INFO 8756 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-03-01 16:13:41.870  INFO 8756 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-03-01 16:13:41.926  WARN 8756 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-03-01 16:13:42.252  INFO 8756 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/resources/**'], []
+2020-03-01 16:13:42.252  INFO 8756 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/static/**'], []
+2020-03-01 16:13:42.252  INFO 8756 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/css/**'], []
+2020-03-01 16:13:42.252  INFO 8756 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/js/**'], []
+2020-03-01 16:13:42.252  INFO 8756 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/images/**'], []
+2020-03-01 16:13:42.266 DEBUG 8756 --- [main] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'permitAll', for Ant [pattern='/']
+2020-03-01 16:13:42.267 DEBUG 8756 --- [main] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'permitAll', for Ant [pattern='/login']
+2020-03-01 16:13:42.267 DEBUG 8756 --- [main] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'permitAll', for Ant [pattern='/registration']
+2020-03-01 16:13:42.268 DEBUG 8756 --- [main] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'permitAll', for Ant [pattern='/main']
+2020-03-01 16:13:42.268 DEBUG 8756 --- [main] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'permitAll', for Ant [pattern='/mypage']
+2020-03-01 16:13:42.268 DEBUG 8756 --- [main] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'authenticated', for any request
+2020-03-01 16:13:42.272 DEBUG 8756 --- [main] o.s.s.w.a.i.FilterSecurityInterceptor    : Validated configuration attributes
+2020-03-01 16:13:42.272 DEBUG 8756 --- [main] o.s.s.w.a.i.FilterSecurityInterceptor    : Validated configuration attributes
+2020-03-01 16:13:42.275  INFO 8756 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@16745abd, org.springframework.security.web.context.SecurityContextPersistenceFilter@16cbba0f, org.springframework.security.web.header.HeaderWriterFilter@6cb3463b, org.springframework.security.web.authentication.logout.LogoutFilter@2f2d8770, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@717b0d81, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@58932d08, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1d57b8f1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4d793390, org.springframework.security.web.session.SessionManagementFilter@4536a09a, org.springframework.security.web.access.ExceptionTranslationFilter@67e1a5fd, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2f4fc18]
+2020-03-01 16:13:42.366  INFO 8756 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-01 16:13:42.673  INFO 8756 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-03-01 16:13:42.674  INFO 8756 --- [main] com.gpch.login.LoginApplication          : Started LoginApplication in 3.185 seconds (JVM running for 4.43)
+2020-03-01 16:13:51.368  INFO 8756 --- [RMI TCP Connection(3)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-03-01 16:13:51.370  INFO 8756 --- [RMI TCP Connection(3)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-03-01 16:13:51.371  INFO 8756 --- [RMI TCP Connection(3)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-03-01 16:13:51.374  INFO 8756 --- [RMI TCP Connection(3)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-03-01 16:13:51.380  INFO 8756 --- [RMI TCP Connection(3)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-03-01 16:14:36.842  INFO 3396 --- [main] com.gpch.login.LoginApplication          : Starting LoginApplication on DESKTOP-0RHTEEE with PID 3396 (F:\workspace\ohsalon\app\target\classes started by yoojin in F:\workspace\ohsalon\app)
+2020-03-01 16:14:36.844  INFO 3396 --- [main] com.gpch.login.LoginApplication          : No active profile set, falling back to default profiles: default
+2020-03-01 16:14:37.423  INFO 3396 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-03-01 16:14:37.469  INFO 3396 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 39ms. Found 2 JPA repository interfaces.
+2020-03-01 16:14:37.681  INFO 3396 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-01 16:14:37.865  INFO 3396 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-03-01 16:14:37.872  INFO 3396 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-01 16:14:37.873  INFO 3396 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-03-01 16:14:38.061  INFO 3396 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-01 16:14:38.062  INFO 3396 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1038 ms
+2020-03-01 16:14:38.171  INFO 3396 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-03-01 16:14:38.211  INFO 3396 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.9.Final}
+2020-03-01 16:14:38.283  INFO 3396 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-03-01 16:14:38.354  INFO 3396 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-03-01 16:14:38.480  INFO 3396 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-03-01 16:14:38.489  INFO 3396 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-03-01 16:14:38.987  INFO 3396 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-03-01 16:14:38.992  INFO 3396 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-03-01 16:14:39.050  WARN 3396 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-03-01 16:14:39.369  INFO 3396 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/resources/**'], []
+2020-03-01 16:14:39.369  INFO 3396 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/static/**'], []
+2020-03-01 16:14:39.369  INFO 3396 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/css/**'], []
+2020-03-01 16:14:39.369  INFO 3396 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/js/**'], []
+2020-03-01 16:14:39.369  INFO 3396 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/images/**'], []
+2020-03-01 16:14:39.383 DEBUG 3396 --- [main] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'permitAll', for Ant [pattern='/']
+2020-03-01 16:14:39.385 DEBUG 3396 --- [main] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'permitAll', for Ant [pattern='/login']
+2020-03-01 16:14:39.385 DEBUG 3396 --- [main] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'permitAll', for Ant [pattern='/registration']
+2020-03-01 16:14:39.385 DEBUG 3396 --- [main] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'permitAll', for Ant [pattern='/main']
+2020-03-01 16:14:39.385 DEBUG 3396 --- [main] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'permitAll', for Ant [pattern='/mypage']
+2020-03-01 16:14:39.385 DEBUG 3396 --- [main] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'authenticated', for any request
+2020-03-01 16:14:39.388 DEBUG 3396 --- [main] o.s.s.w.a.i.FilterSecurityInterceptor    : Validated configuration attributes
+2020-03-01 16:14:39.388 DEBUG 3396 --- [main] o.s.s.w.a.i.FilterSecurityInterceptor    : Validated configuration attributes
+2020-03-01 16:14:39.390  INFO 3396 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2e7e4480, org.springframework.security.web.context.SecurityContextPersistenceFilter@58647985, org.springframework.security.web.header.HeaderWriterFilter@7c857e8f, org.springframework.security.web.authentication.logout.LogoutFilter@3f62d56, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@51d9fd30, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@69e8b711, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@28d16af8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@8beb0dd, org.springframework.security.web.session.SessionManagementFilter@50f6ecab, org.springframework.security.web.access.ExceptionTranslationFilter@7b1d2f65, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@782143e8]
+2020-03-01 16:14:39.482  INFO 3396 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-01 16:14:39.786  INFO 3396 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-03-01 16:14:39.788  INFO 3396 --- [main] com.gpch.login.LoginApplication          : Started LoginApplication in 3.175 seconds (JVM running for 4.406)
+2020-03-01 16:14:47.378  INFO 3396 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-03-01 16:14:47.379  INFO 3396 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-03-01 16:14:47.386  INFO 3396 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2020-03-01 16:14:47.393 DEBUG 3396 --- [http-nio-8080-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/login'; against '/resources/**'
+2020-03-01 16:14:47.394 DEBUG 3396 --- [http-nio-8080-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/login'; against '/static/**'
+2020-03-01 16:14:47.394 DEBUG 3396 --- [http-nio-8080-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/login'; against '/css/**'
+2020-03-01 16:14:47.394 DEBUG 3396 --- [http-nio-8080-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/login'; against '/js/**'
+2020-03-01 16:14:47.394 DEBUG 3396 --- [http-nio-8080-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/login'; against '/images/**'
+2020-03-01 16:14:47.394 DEBUG 3396 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : /login at position 1 of 11 in additional filter chain; firing Filter: 'WebAsyncManagerIntegrationFilter'
+2020-03-01 16:14:47.395 DEBUG 3396 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : /login at position 2 of 11 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter'
+2020-03-01 16:14:47.395 DEBUG 3396 --- [http-nio-8080-exec-1] w.c.HttpSessionSecurityContextRepository : No HttpSession currently exists
+2020-03-01 16:14:47.395 DEBUG 3396 --- [http-nio-8080-exec-1] w.c.HttpSessionSecurityContextRepository : No SecurityContext was available from the HttpSession: null. A new one will be created.
+2020-03-01 16:14:47.397 DEBUG 3396 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : /login at position 3 of 11 in additional filter chain; firing Filter: 'HeaderWriterFilter'
+2020-03-01 16:14:47.398 DEBUG 3396 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : /login at position 4 of 11 in additional filter chain; firing Filter: 'LogoutFilter'
+2020-03-01 16:14:47.398 DEBUG 3396 --- [http-nio-8080-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/login'; against '/logout'
+2020-03-01 16:14:47.398 DEBUG 3396 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : /login at position 5 of 11 in additional filter chain; firing Filter: 'UsernamePasswordAuthenticationFilter'
+2020-03-01 16:14:47.398 DEBUG 3396 --- [http-nio-8080-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'GET /login' doesn't match 'POST /login'
+2020-03-01 16:14:47.398 DEBUG 3396 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : /login at position 6 of 11 in additional filter chain; firing Filter: 'RequestCacheAwareFilter'
+2020-03-01 16:14:47.398 DEBUG 3396 --- [http-nio-8080-exec-1] o.s.s.w.s.HttpSessionRequestCache        : saved request doesn't match
+2020-03-01 16:14:47.398 DEBUG 3396 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : /login at position 7 of 11 in additional filter chain; firing Filter: 'SecurityContextHolderAwareRequestFilter'
+2020-03-01 16:14:47.399 DEBUG 3396 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : /login at position 8 of 11 in additional filter chain; firing Filter: 'AnonymousAuthenticationFilter'
+2020-03-01 16:14:47.400 DEBUG 3396 --- [http-nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Populated SecurityContextHolder with anonymous token: 'org.springframework.security.authentication.AnonymousAuthenticationToken@7484eb4a: Principal: anonymousUser; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@b364: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: null; Granted Authorities: ROLE_ANONYMOUS'
+2020-03-01 16:14:47.400 DEBUG 3396 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : /login at position 9 of 11 in additional filter chain; firing Filter: 'SessionManagementFilter'
+2020-03-01 16:14:47.400 DEBUG 3396 --- [http-nio-8080-exec-1] o.s.s.w.session.SessionManagementFilter  : Requested session ID 8B9CF8BFF39B11450CFAF52FCCDF56C2 is invalid.
+2020-03-01 16:14:47.400 DEBUG 3396 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : /login at position 10 of 11 in additional filter chain; firing Filter: 'ExceptionTranslationFilter'
+2020-03-01 16:14:47.400 DEBUG 3396 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : /login at position 11 of 11 in additional filter chain; firing Filter: 'FilterSecurityInterceptor'
+2020-03-01 16:14:47.401 DEBUG 3396 --- [http-nio-8080-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/login'; against '/'
+2020-03-01 16:14:47.401 DEBUG 3396 --- [http-nio-8080-exec-1] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/login'; against '/login'
+2020-03-01 16:14:47.401 DEBUG 3396 --- [http-nio-8080-exec-1] o.s.s.w.a.i.FilterSecurityInterceptor    : Secure object: FilterInvocation: URL: /login; Attributes: [permitAll]
+2020-03-01 16:14:47.401 DEBUG 3396 --- [http-nio-8080-exec-1] o.s.s.w.a.i.FilterSecurityInterceptor    : Previously Authenticated: org.springframework.security.authentication.AnonymousAuthenticationToken@7484eb4a: Principal: anonymousUser; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@b364: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: null; Granted Authorities: ROLE_ANONYMOUS
+2020-03-01 16:14:47.405 DEBUG 3396 --- [http-nio-8080-exec-1] o.s.s.access.vote.AffirmativeBased       : Voter: org.springframework.security.web.access.expression.WebExpressionVoter@266af37b, returned: 1
+2020-03-01 16:14:47.405 DEBUG 3396 --- [http-nio-8080-exec-1] o.s.s.w.a.i.FilterSecurityInterceptor    : Authorization successful
+2020-03-01 16:14:47.405 DEBUG 3396 --- [http-nio-8080-exec-1] o.s.s.w.a.i.FilterSecurityInterceptor    : RunAsManager did not change Authentication object
+2020-03-01 16:14:47.405 DEBUG 3396 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : /login reached end of additional filter chain; proceeding with original chain
+2020-03-01 16:14:47.416  INFO 3396 --- [http-nio-8080-exec-1] c.gpch.login.controller.LoginController  : login()
+2020-03-01 16:14:47.417  INFO 3396 --- [http-nio-8080-exec-1] c.gpch.login.controller.LoginController  : login
+2020-03-01 16:14:47.674 DEBUG 3396 --- [http-nio-8080-exec-1] o.s.s.w.header.writers.HstsHeaderWriter  : Not injecting HSTS header since it did not match the requestMatcher org.springframework.security.web.header.writers.HstsHeaderWriter$SecureRequestMatcher@468f871d
+2020-03-01 16:14:47.674 DEBUG 3396 --- [http-nio-8080-exec-1] w.c.HttpSessionSecurityContextRepository : SecurityContext is empty or contents are anonymous - context will not be stored in HttpSession.
+2020-03-01 16:14:47.677 DEBUG 3396 --- [http-nio-8080-exec-1] o.s.s.w.a.ExceptionTranslationFilter     : Chain processed normally
+2020-03-01 16:14:47.678 DEBUG 3396 --- [http-nio-8080-exec-1] s.s.w.c.SecurityContextPersistenceFilter : SecurityContextHolder now cleared, as request processing completed
+2020-03-01 16:14:47.763 DEBUG 3396 --- [http-nio-8080-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/favicon.ico'; against '/resources/**'
+2020-03-01 16:14:47.763 DEBUG 3396 --- [http-nio-8080-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/favicon.ico'; against '/static/**'
+2020-03-01 16:14:47.763 DEBUG 3396 --- [http-nio-8080-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/favicon.ico'; against '/css/**'
+2020-03-01 16:14:47.763 DEBUG 3396 --- [http-nio-8080-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/favicon.ico'; against '/js/**'
+2020-03-01 16:14:47.764 DEBUG 3396 --- [http-nio-8080-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/favicon.ico'; against '/images/**'
+2020-03-01 16:14:47.764 DEBUG 3396 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : /favicon.ico at position 1 of 11 in additional filter chain; firing Filter: 'WebAsyncManagerIntegrationFilter'
+2020-03-01 16:14:47.764 DEBUG 3396 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : /favicon.ico at position 2 of 11 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter'
+2020-03-01 16:14:47.764 DEBUG 3396 --- [http-nio-8080-exec-2] w.c.HttpSessionSecurityContextRepository : No HttpSession currently exists
+2020-03-01 16:14:47.764 DEBUG 3396 --- [http-nio-8080-exec-2] w.c.HttpSessionSecurityContextRepository : No SecurityContext was available from the HttpSession: null. A new one will be created.
+2020-03-01 16:14:47.764 DEBUG 3396 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : /favicon.ico at position 3 of 11 in additional filter chain; firing Filter: 'HeaderWriterFilter'
+2020-03-01 16:14:47.764 DEBUG 3396 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : /favicon.ico at position 4 of 11 in additional filter chain; firing Filter: 'LogoutFilter'
+2020-03-01 16:14:47.765 DEBUG 3396 --- [http-nio-8080-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/favicon.ico'; against '/logout'
+2020-03-01 16:14:47.765 DEBUG 3396 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : /favicon.ico at position 5 of 11 in additional filter chain; firing Filter: 'UsernamePasswordAuthenticationFilter'
+2020-03-01 16:14:47.765 DEBUG 3396 --- [http-nio-8080-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'GET /favicon.ico' doesn't match 'POST /login'
+2020-03-01 16:14:47.765 DEBUG 3396 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : /favicon.ico at position 6 of 11 in additional filter chain; firing Filter: 'RequestCacheAwareFilter'
+2020-03-01 16:14:47.765 DEBUG 3396 --- [http-nio-8080-exec-2] o.s.s.w.s.HttpSessionRequestCache        : saved request doesn't match
+2020-03-01 16:14:47.765 DEBUG 3396 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : /favicon.ico at position 7 of 11 in additional filter chain; firing Filter: 'SecurityContextHolderAwareRequestFilter'
+2020-03-01 16:14:47.765 DEBUG 3396 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : /favicon.ico at position 8 of 11 in additional filter chain; firing Filter: 'AnonymousAuthenticationFilter'
+2020-03-01 16:14:47.765 DEBUG 3396 --- [http-nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Populated SecurityContextHolder with anonymous token: 'org.springframework.security.authentication.AnonymousAuthenticationToken@7484eb4a: Principal: anonymousUser; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@b364: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: null; Granted Authorities: ROLE_ANONYMOUS'
+2020-03-01 16:14:47.765 DEBUG 3396 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : /favicon.ico at position 9 of 11 in additional filter chain; firing Filter: 'SessionManagementFilter'
+2020-03-01 16:14:47.766 DEBUG 3396 --- [http-nio-8080-exec-2] o.s.s.w.session.SessionManagementFilter  : Requested session ID 8B9CF8BFF39B11450CFAF52FCCDF56C2 is invalid.
+2020-03-01 16:14:47.766 DEBUG 3396 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : /favicon.ico at position 10 of 11 in additional filter chain; firing Filter: 'ExceptionTranslationFilter'
+2020-03-01 16:14:47.766 DEBUG 3396 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : /favicon.ico at position 11 of 11 in additional filter chain; firing Filter: 'FilterSecurityInterceptor'
+2020-03-01 16:14:47.766 DEBUG 3396 --- [http-nio-8080-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/favicon.ico'; against '/'
+2020-03-01 16:14:47.766 DEBUG 3396 --- [http-nio-8080-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/favicon.ico'; against '/login'
+2020-03-01 16:14:47.766 DEBUG 3396 --- [http-nio-8080-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/favicon.ico'; against '/registration'
+2020-03-01 16:14:47.766 DEBUG 3396 --- [http-nio-8080-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/favicon.ico'; against '/main'
+2020-03-01 16:14:47.766 DEBUG 3396 --- [http-nio-8080-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/favicon.ico'; against '/mypage'
+2020-03-01 16:14:47.766 DEBUG 3396 --- [http-nio-8080-exec-2] o.s.s.w.a.i.FilterSecurityInterceptor    : Secure object: FilterInvocation: URL: /favicon.ico; Attributes: [authenticated]
+2020-03-01 16:14:47.766 DEBUG 3396 --- [http-nio-8080-exec-2] o.s.s.w.a.i.FilterSecurityInterceptor    : Previously Authenticated: org.springframework.security.authentication.AnonymousAuthenticationToken@7484eb4a: Principal: anonymousUser; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@b364: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: null; Granted Authorities: ROLE_ANONYMOUS
+2020-03-01 16:14:47.767 DEBUG 3396 --- [http-nio-8080-exec-2] o.s.s.access.vote.AffirmativeBased       : Voter: org.springframework.security.web.access.expression.WebExpressionVoter@266af37b, returned: -1
+2020-03-01 16:14:47.774 DEBUG 3396 --- [http-nio-8080-exec-2] o.s.s.w.a.ExceptionTranslationFilter     : Access is denied (user is anonymous); redirecting to authentication entry point
+
+org.springframework.security.access.AccessDeniedException: Access is denied
+	at org.springframework.security.access.vote.AffirmativeBased.decide(AffirmativeBased.java:84) ~[spring-security-core-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.access.intercept.AbstractSecurityInterceptor.beforeInvocation(AbstractSecurityInterceptor.java:233) ~[spring-security-core-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:123) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:90) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:118) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:158) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:200) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:92) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:77) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178) ~[spring-security-web-5.2.1.RELEASE.jar:5.2.1.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358) ~[spring-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271) ~[spring-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.2.RELEASE.jar:5.2.2.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:526) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1591) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.29.jar:9.0.29]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+2020-03-01 16:14:47.781 DEBUG 3396 --- [http-nio-8080-exec-2] o.s.s.w.util.matcher.AndRequestMatcher   : Trying to match using NegatedRequestMatcher [requestMatcher=Ant [pattern='/**/favicon.*']]
+2020-03-01 16:14:47.781 DEBUG 3396 --- [http-nio-8080-exec-2] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/favicon.ico'; against '/**/favicon.*'
+2020-03-01 16:14:47.781 DEBUG 3396 --- [http-nio-8080-exec-2] o.s.s.w.u.matcher.NegatedRequestMatcher  : matches = false
+2020-03-01 16:14:47.781 DEBUG 3396 --- [http-nio-8080-exec-2] o.s.s.w.util.matcher.AndRequestMatcher   : Did not match
+2020-03-01 16:14:47.782 DEBUG 3396 --- [http-nio-8080-exec-2] o.s.s.w.s.HttpSessionRequestCache        : Request not saved as configured RequestMatcher did not match
+2020-03-01 16:14:47.782 DEBUG 3396 --- [http-nio-8080-exec-2] o.s.s.w.a.ExceptionTranslationFilter     : Calling Authentication entry point.
+2020-03-01 16:14:47.783 DEBUG 3396 --- [http-nio-8080-exec-2] o.s.s.web.DefaultRedirectStrategy        : Redirecting to 'http://localhost:8080/'
+2020-03-01 16:14:47.783 DEBUG 3396 --- [http-nio-8080-exec-2] o.s.s.w.header.writers.HstsHeaderWriter  : Not injecting HSTS header since it did not match the requestMatcher org.springframework.security.web.header.writers.HstsHeaderWriter$SecureRequestMatcher@468f871d
+2020-03-01 16:14:47.783 DEBUG 3396 --- [http-nio-8080-exec-2] w.c.HttpSessionSecurityContextRepository : SecurityContext is empty or contents are anonymous - context will not be stored in HttpSession.
+2020-03-01 16:14:47.784 DEBUG 3396 --- [http-nio-8080-exec-2] s.s.w.c.SecurityContextPersistenceFilter : SecurityContextHolder now cleared, as request processing completed
+2020-03-01 16:14:47.788 DEBUG 3396 --- [http-nio-8080-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/'; against '/resources/**'
+2020-03-01 16:14:47.788 DEBUG 3396 --- [http-nio-8080-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/'; against '/static/**'
+2020-03-01 16:14:47.788 DEBUG 3396 --- [http-nio-8080-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/'; against '/css/**'
+2020-03-01 16:14:47.788 DEBUG 3396 --- [http-nio-8080-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/'; against '/js/**'
+2020-03-01 16:14:47.788 DEBUG 3396 --- [http-nio-8080-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/'; against '/images/**'
+2020-03-01 16:14:47.788 DEBUG 3396 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : / at position 1 of 11 in additional filter chain; firing Filter: 'WebAsyncManagerIntegrationFilter'
+2020-03-01 16:14:47.788 DEBUG 3396 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : / at position 2 of 11 in additional filter chain; firing Filter: 'SecurityContextPersistenceFilter'
+2020-03-01 16:14:47.788 DEBUG 3396 --- [http-nio-8080-exec-3] w.c.HttpSessionSecurityContextRepository : No HttpSession currently exists
+2020-03-01 16:14:47.789 DEBUG 3396 --- [http-nio-8080-exec-3] w.c.HttpSessionSecurityContextRepository : No SecurityContext was available from the HttpSession: null. A new one will be created.
+2020-03-01 16:14:47.789 DEBUG 3396 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : / at position 3 of 11 in additional filter chain; firing Filter: 'HeaderWriterFilter'
+2020-03-01 16:14:47.789 DEBUG 3396 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : / at position 4 of 11 in additional filter chain; firing Filter: 'LogoutFilter'
+2020-03-01 16:14:47.789 DEBUG 3396 --- [http-nio-8080-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/'; against '/logout'
+2020-03-01 16:14:47.789 DEBUG 3396 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : / at position 5 of 11 in additional filter chain; firing Filter: 'UsernamePasswordAuthenticationFilter'
+2020-03-01 16:14:47.789 DEBUG 3396 --- [http-nio-8080-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Request 'GET /' doesn't match 'POST /login'
+2020-03-01 16:14:47.789 DEBUG 3396 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : / at position 6 of 11 in additional filter chain; firing Filter: 'RequestCacheAwareFilter'
+2020-03-01 16:14:47.790 DEBUG 3396 --- [http-nio-8080-exec-3] o.s.s.w.s.HttpSessionRequestCache        : saved request doesn't match
+2020-03-01 16:14:47.790 DEBUG 3396 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : / at position 7 of 11 in additional filter chain; firing Filter: 'SecurityContextHolderAwareRequestFilter'
+2020-03-01 16:14:47.790 DEBUG 3396 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : / at position 8 of 11 in additional filter chain; firing Filter: 'AnonymousAuthenticationFilter'
+2020-03-01 16:14:47.790 DEBUG 3396 --- [http-nio-8080-exec-3] o.s.s.w.a.AnonymousAuthenticationFilter  : Populated SecurityContextHolder with anonymous token: 'org.springframework.security.authentication.AnonymousAuthenticationToken@7484eb4a: Principal: anonymousUser; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@b364: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: null; Granted Authorities: ROLE_ANONYMOUS'
+2020-03-01 16:14:47.790 DEBUG 3396 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : / at position 9 of 11 in additional filter chain; firing Filter: 'SessionManagementFilter'
+2020-03-01 16:14:47.790 DEBUG 3396 --- [http-nio-8080-exec-3] o.s.s.w.session.SessionManagementFilter  : Requested session ID 8B9CF8BFF39B11450CFAF52FCCDF56C2 is invalid.
+2020-03-01 16:14:47.790 DEBUG 3396 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : / at position 10 of 11 in additional filter chain; firing Filter: 'ExceptionTranslationFilter'
+2020-03-01 16:14:47.791 DEBUG 3396 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : / at position 11 of 11 in additional filter chain; firing Filter: 'FilterSecurityInterceptor'
+2020-03-01 16:14:47.791 DEBUG 3396 --- [http-nio-8080-exec-3] o.s.s.w.u.matcher.AntPathRequestMatcher  : Checking match of request : '/'; against '/'
+2020-03-01 16:14:47.791 DEBUG 3396 --- [http-nio-8080-exec-3] o.s.s.w.a.i.FilterSecurityInterceptor    : Secure object: FilterInvocation: URL: /; Attributes: [permitAll]
+2020-03-01 16:14:47.791 DEBUG 3396 --- [http-nio-8080-exec-3] o.s.s.w.a.i.FilterSecurityInterceptor    : Previously Authenticated: org.springframework.security.authentication.AnonymousAuthenticationToken@7484eb4a: Principal: anonymousUser; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@b364: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: null; Granted Authorities: ROLE_ANONYMOUS
+2020-03-01 16:14:47.791 DEBUG 3396 --- [http-nio-8080-exec-3] o.s.s.access.vote.AffirmativeBased       : Voter: org.springframework.security.web.access.expression.WebExpressionVoter@266af37b, returned: 1
+2020-03-01 16:14:47.791 DEBUG 3396 --- [http-nio-8080-exec-3] o.s.s.w.a.i.FilterSecurityInterceptor    : Authorization successful
+2020-03-01 16:14:47.791 DEBUG 3396 --- [http-nio-8080-exec-3] o.s.s.w.a.i.FilterSecurityInterceptor    : RunAsManager did not change Authentication object
+2020-03-01 16:14:47.791 DEBUG 3396 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : / reached end of additional filter chain; proceeding with original chain
+2020-03-01 16:14:47.792  INFO 3396 --- [http-nio-8080-exec-3] c.gpch.login.controller.LoginController  : login()
+2020-03-01 16:14:47.792  INFO 3396 --- [http-nio-8080-exec-3] c.gpch.login.controller.LoginController  : login
+2020-03-01 16:14:47.796 DEBUG 3396 --- [http-nio-8080-exec-3] o.s.s.w.header.writers.HstsHeaderWriter  : Not injecting HSTS header since it did not match the requestMatcher org.springframework.security.web.header.writers.HstsHeaderWriter$SecureRequestMatcher@468f871d
+2020-03-01 16:14:47.796 DEBUG 3396 --- [http-nio-8080-exec-3] w.c.HttpSessionSecurityContextRepository : SecurityContext is empty or contents are anonymous - context will not be stored in HttpSession.
+2020-03-01 16:14:47.797 DEBUG 3396 --- [http-nio-8080-exec-3] o.s.s.w.a.ExceptionTranslationFilter     : Chain processed normally
+2020-03-01 16:14:47.797 DEBUG 3396 --- [http-nio-8080-exec-3] s.s.w.c.SecurityContextPersistenceFilter : SecurityContextHolder now cleared, as request processing completed
+2020-03-01 16:14:58.440  INFO 3396 --- [RMI TCP Connection(3)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-03-01 16:14:58.442  INFO 3396 --- [RMI TCP Connection(3)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-03-01 16:14:58.443  INFO 3396 --- [RMI TCP Connection(3)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-03-01 16:14:58.445  INFO 3396 --- [RMI TCP Connection(3)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-03-01 16:14:58.452  INFO 3396 --- [RMI TCP Connection(3)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-03-01 16:15:04.096  INFO 14328 --- [main] com.gpch.login.LoginApplication          : Starting LoginApplication on DESKTOP-0RHTEEE with PID 14328 (F:\workspace\ohsalon\app\target\classes started by yoojin in F:\workspace\ohsalon\app)
+2020-03-01 16:15:04.098  INFO 14328 --- [main] com.gpch.login.LoginApplication          : No active profile set, falling back to default profiles: default
+2020-03-01 16:15:04.720  INFO 14328 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-03-01 16:15:04.777  INFO 14328 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 50ms. Found 2 JPA repository interfaces.
+2020-03-01 16:15:05.006  INFO 14328 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-01 16:15:05.203  INFO 14328 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-03-01 16:15:05.212  INFO 14328 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-01 16:15:05.213  INFO 14328 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-03-01 16:15:05.415  INFO 14328 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-01 16:15:05.415  INFO 14328 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1132 ms
+2020-03-01 16:15:05.531  INFO 14328 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-03-01 16:15:05.580  INFO 14328 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.9.Final}
+2020-03-01 16:15:05.652  INFO 14328 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-03-01 16:15:05.712  INFO 14328 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-03-01 16:15:05.847  INFO 14328 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-03-01 16:15:05.855  INFO 14328 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-03-01 16:15:06.388  INFO 14328 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-03-01 16:15:06.395  INFO 14328 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-03-01 16:15:06.461  WARN 14328 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-03-01 16:15:06.778  INFO 14328 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/resources/**'], []
+2020-03-01 16:15:06.778  INFO 14328 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/static/**'], []
+2020-03-01 16:15:06.778  INFO 14328 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/css/**'], []
+2020-03-01 16:15:06.778  INFO 14328 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/js/**'], []
+2020-03-01 16:15:06.778  INFO 14328 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/images/**'], []
+2020-03-01 16:15:06.793 DEBUG 14328 --- [main] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'permitAll', for Ant [pattern='/']
+2020-03-01 16:15:06.794 DEBUG 14328 --- [main] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'permitAll', for Ant [pattern='/login']
+2020-03-01 16:15:06.794 DEBUG 14328 --- [main] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'permitAll', for Ant [pattern='/registration']
+2020-03-01 16:15:06.794 DEBUG 14328 --- [main] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'permitAll', for Ant [pattern='/main']
+2020-03-01 16:15:06.794 DEBUG 14328 --- [main] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'permitAll', for Ant [pattern='/mypage']
+2020-03-01 16:15:06.794 DEBUG 14328 --- [main] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'authenticated', for any request
+2020-03-01 16:15:06.797 DEBUG 14328 --- [main] o.s.s.w.a.i.FilterSecurityInterceptor    : Validated configuration attributes
+2020-03-01 16:15:06.798 DEBUG 14328 --- [main] o.s.s.w.a.i.FilterSecurityInterceptor    : Validated configuration attributes
+2020-03-01 16:15:06.800  INFO 14328 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@584fb03d, org.springframework.security.web.context.SecurityContextPersistenceFilter@2dcbf825, org.springframework.security.web.header.HeaderWriterFilter@19c24321, org.springframework.security.web.authentication.logout.LogoutFilter@35efd12c, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6a4f7c17, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@59c00010, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@552fffc8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@563392e5, org.springframework.security.web.session.SessionManagementFilter@97cb8dc, org.springframework.security.web.access.ExceptionTranslationFilter@33563147, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7aaf6bfd]
+2020-03-01 16:15:06.906  INFO 14328 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-01 16:15:07.255  INFO 14328 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-03-01 16:15:07.257  INFO 14328 --- [main] com.gpch.login.LoginApplication          : Started LoginApplication in 3.376 seconds (JVM running for 4.636)
+2020-03-01 16:15:09.965  INFO 14328 --- [RMI TCP Connection(3)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-03-01 16:15:09.969  INFO 14328 --- [RMI TCP Connection(3)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-03-01 16:15:09.970  INFO 14328 --- [RMI TCP Connection(3)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-03-01 16:15:09.972  INFO 14328 --- [RMI TCP Connection(3)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-03-01 16:15:09.979  INFO 14328 --- [RMI TCP Connection(3)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-03-01 16:15:57.946  INFO 15124 --- [main] com.gpch.login.LoginApplication          : Starting LoginApplication on DESKTOP-0RHTEEE with PID 15124 (F:\workspace\ohsalon\app\target\classes started by yoojin in F:\workspace\ohsalon\app)
+2020-03-01 16:15:57.949 DEBUG 15124 --- [main] com.gpch.login.LoginApplication          : Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2020-03-01 16:15:57.949  INFO 15124 --- [main] com.gpch.login.LoginApplication          : No active profile set, falling back to default profiles: default
+2020-03-01 16:15:58.517  INFO 15124 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-03-01 16:15:58.564  INFO 15124 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 41ms. Found 2 JPA repository interfaces.
+2020-03-01 16:15:58.773  INFO 15124 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-01 16:15:58.938  INFO 15124 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-03-01 16:15:58.947  INFO 15124 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-01 16:15:58.947  INFO 15124 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-03-01 16:15:59.137  INFO 15124 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-01 16:15:59.137  INFO 15124 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1013 ms
+2020-03-01 16:15:59.245  INFO 15124 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-03-01 16:15:59.286  INFO 15124 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.9.Final}
+2020-03-01 16:15:59.358  INFO 15124 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-03-01 16:15:59.429  INFO 15124 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-03-01 16:15:59.552  INFO 15124 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-03-01 16:15:59.560  INFO 15124 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-03-01 16:16:00.077  INFO 15124 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-03-01 16:16:00.082  INFO 15124 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-03-01 16:16:00.142  WARN 15124 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-03-01 16:16:00.496  INFO 15124 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/resources/**'], []
+2020-03-01 16:16:00.496  INFO 15124 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/static/**'], []
+2020-03-01 16:16:00.496  INFO 15124 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/css/**'], []
+2020-03-01 16:16:00.496  INFO 15124 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/js/**'], []
+2020-03-01 16:16:00.496  INFO 15124 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/images/**'], []
+2020-03-01 16:16:00.510 DEBUG 15124 --- [main] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'permitAll', for Ant [pattern='/']
+2020-03-01 16:16:00.511 DEBUG 15124 --- [main] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'permitAll', for Ant [pattern='/login']
+2020-03-01 16:16:00.511 DEBUG 15124 --- [main] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'permitAll', for Ant [pattern='/registration']
+2020-03-01 16:16:00.512 DEBUG 15124 --- [main] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'permitAll', for Ant [pattern='/main']
+2020-03-01 16:16:00.512 DEBUG 15124 --- [main] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'permitAll', for Ant [pattern='/mypage']
+2020-03-01 16:16:00.512 DEBUG 15124 --- [main] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'authenticated', for any request
+2020-03-01 16:16:00.515 DEBUG 15124 --- [main] o.s.s.w.a.i.FilterSecurityInterceptor    : Validated configuration attributes
+2020-03-01 16:16:00.516 DEBUG 15124 --- [main] o.s.s.w.a.i.FilterSecurityInterceptor    : Validated configuration attributes
+2020-03-01 16:16:00.518  INFO 15124 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4693d24f, org.springframework.security.web.context.SecurityContextPersistenceFilter@19855799, org.springframework.security.web.header.HeaderWriterFilter@766db6f9, org.springframework.security.web.authentication.logout.LogoutFilter@6ab826bb, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@59aba3c3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5020b59f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7f5f7731, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@236a3e4, org.springframework.security.web.session.SessionManagementFilter@728535c6, org.springframework.security.web.access.ExceptionTranslationFilter@2ce62e27, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5392aa2b]
+2020-03-01 16:16:00.619  INFO 15124 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-01 16:16:00.939  INFO 15124 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-03-01 16:16:00.941  INFO 15124 --- [main] com.gpch.login.LoginApplication          : Started LoginApplication in 3.222 seconds (JVM running for 4.455)
+2020-03-01 16:17:34.094  INFO 15124 --- [RMI TCP Connection(3)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-03-01 16:17:34.097  INFO 15124 --- [RMI TCP Connection(3)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-03-01 16:17:34.098  INFO 15124 --- [RMI TCP Connection(3)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-03-01 16:17:34.101  INFO 15124 --- [RMI TCP Connection(3)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-03-01 16:17:34.107  INFO 15124 --- [RMI TCP Connection(3)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-03-01 16:17:43.674  INFO 6088 --- [main] com.gpch.login.LoginApplication          : Starting LoginApplication on DESKTOP-0RHTEEE with PID 6088 (F:\workspace\ohsalon\app\target\classes started by yoojin in F:\workspace\ohsalon\app)
+2020-03-01 16:17:43.675 DEBUG 6088 --- [main] com.gpch.login.LoginApplication          : Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2020-03-01 16:17:43.676  INFO 6088 --- [main] com.gpch.login.LoginApplication          : No active profile set, falling back to default profiles: default
+2020-03-01 16:17:44.296  INFO 6088 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-03-01 16:17:44.345  INFO 6088 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 43ms. Found 2 JPA repository interfaces.
+2020-03-01 16:17:44.567  INFO 6088 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-03-01 16:17:44.752  INFO 6088 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-03-01 16:17:44.759  INFO 6088 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-03-01 16:17:44.759  INFO 6088 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-03-01 16:17:44.971  INFO 6088 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-03-01 16:17:44.971  INFO 6088 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1109 ms
+2020-03-01 16:17:45.085  INFO 6088 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-03-01 16:17:45.133  INFO 6088 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.9.Final}
+2020-03-01 16:17:45.209  INFO 6088 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-03-01 16:17:45.276  INFO 6088 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-03-01 16:17:45.409  INFO 6088 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-03-01 16:17:45.417  INFO 6088 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-03-01 16:17:45.935  INFO 6088 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-03-01 16:17:45.940  INFO 6088 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-03-01 16:17:46.027  WARN 6088 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-03-01 16:17:46.429  INFO 6088 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/resources/**'], []
+2020-03-01 16:17:46.429  INFO 6088 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/static/**'], []
+2020-03-01 16:17:46.429  INFO 6088 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/css/**'], []
+2020-03-01 16:17:46.429  INFO 6088 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/js/**'], []
+2020-03-01 16:17:46.429  INFO 6088 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/images/**'], []
+2020-03-01 16:17:46.448 DEBUG 6088 --- [main] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'permitAll', for Ant [pattern='/']
+2020-03-01 16:17:46.450 DEBUG 6088 --- [main] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'permitAll', for Ant [pattern='/login']
+2020-03-01 16:17:46.450 DEBUG 6088 --- [main] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'permitAll', for Ant [pattern='/registration']
+2020-03-01 16:17:46.450 DEBUG 6088 --- [main] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'permitAll', for Ant [pattern='/main']
+2020-03-01 16:17:46.450 DEBUG 6088 --- [main] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'permitAll', for Ant [pattern='/mypage']
+2020-03-01 16:17:46.450 DEBUG 6088 --- [main] edFilterInvocationSecurityMetadataSource : Adding web access control expression 'authenticated', for any request
+2020-03-01 16:17:46.453 DEBUG 6088 --- [main] o.s.s.w.a.i.FilterSecurityInterceptor    : Validated configuration attributes
+2020-03-01 16:17:46.454 DEBUG 6088 --- [main] o.s.s.w.a.i.FilterSecurityInterceptor    : Validated configuration attributes
+2020-03-01 16:17:46.456  INFO 6088 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7488c183, org.springframework.security.web.context.SecurityContextPersistenceFilter@b889cb6, org.springframework.security.web.header.HeaderWriterFilter@66046e7c, org.springframework.security.web.authentication.logout.LogoutFilter@41b2123e, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@104cf647, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@54c37dab, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1d6a0962, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@66779435, org.springframework.security.web.session.SessionManagementFilter@726a5e6a, org.springframework.security.web.access.ExceptionTranslationFilter@52d181ed, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3a2a56f6]
+2020-03-01 16:17:46.574  INFO 6088 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-03-01 16:17:47.026  INFO 6088 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-03-01 16:17:47.028  INFO 6088 --- [main] com.gpch.login.LoginApplication          : Started LoginApplication in 3.588 seconds (JVM running for 4.92)
+2020-03-01 16:17:53.638  INFO 6088 --- [RMI TCP Connection(3)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-03-01 16:17:53.641  INFO 6088 --- [RMI TCP Connection(3)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-03-01 16:17:53.641  INFO 6088 --- [RMI TCP Connection(3)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-03-01 16:17:53.644  INFO 6088 --- [RMI TCP Connection(3)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-03-01 16:17:53.651  INFO 6088 --- [RMI TCP Connection(3)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
