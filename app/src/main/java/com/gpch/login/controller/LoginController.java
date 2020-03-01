@@ -52,8 +52,12 @@ public class LoginController {
     @PostMapping(value = "/registration")
     public ModelAndView createNewUser(@Valid User user, BindingResult bindingResult) {
     	log.info("createNewUser()");
-        ModelAndView modelAndView = new ModelAndView();
+        
+    	ModelAndView modelAndView = new ModelAndView();
         User userExists = userService.findUserByUserName(user.getUserName());
+        
+        log.info("createNewUser()");
+        
         if (userExists != null) {
             bindingResult
                     .rejectValue("userName", "error.user",
